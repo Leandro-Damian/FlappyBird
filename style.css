@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to bottom, #87CEEB, #ffffff); /* Cielo azul */
+    height: 100vh;
+}
+
+#game {
+    width: 400px;
+    height: 500px;
+    border: 1px solid #181818;
+    margin: auto;
+    overflow: hidden;
+}
+
+#block {
+    width: 50px;
+    height: 500px;
+    background-color: #2D2D2D;
+    position: relative;
+    animation: block 2s infinite linear;
+}
+
+@keyframes block {
+    0%{left: 400px;}
+    100%{left: -50px;}
+}
+
+#hole {
+    width: 50px;
+    height: 150px;
+    background-color: #E5F5FF;
+    position: relative;
+    left: 400px;
+    top: -500px;
+    animation: block 2s infinite linear;
+}
+
+#character {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    top: 100px;
+    border-radius: 50%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+footer p {
+    border: 1px solid black;
+    padding: 10px;
+    font-weight: bold;
+}
+
